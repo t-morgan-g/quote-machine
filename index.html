@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Quote Machine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/108edbc32a.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="quote">
+            <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+            <span id="text"></span>
+        </div>
+
+        <p id="author"></p>
+
+        <div class="buttons">
+            <a id="twitter-button" class="twitter-share-button" onclick="quotes.tweetQuote()" href="https://twitter.com/intent/tweet?text=Hello+world,+how're+you" target="_blank">
+                <button>
+                    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                </button>
+            </a>
+            <button id="btnQuote" onclick="quotes.randomQuote()">Random Quote!</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
